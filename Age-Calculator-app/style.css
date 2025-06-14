@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; /*62.5% of 16px = 10px*/
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Poppins";
+}
+
+main {
+  max-width: 144rem;
+  background-color: hsl(0, 0%, 94%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 95vh;
+  width: 144rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  max-width: 50%;
+  gap: 2%;
+
+  background-color: hsl(0, 100%, 100%);
+  width: 50%;
+  height: 80%;
+  border-radius: 4% 4% 30% 4%;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.input-form {
+  width: 100%;
+  height: 20%;
+  margin-top: 9rem;
+}
+.middle-art {
+  display: flex;
+  align-items: center;
+}
+.output {
+  flex-grow: 1;
+  width: 100%;
+  height: 60%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+form {
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: start;
+
+  gap: 3.6rem;
+
+  height: 100%;
+}
+
+li {
+  display: flex;
+  flex: 1 0 auto;
+  max-width: 20%;
+  flex-direction: column;
+  gap: 0.4rem;
+  height: 100%;
+  width: 15%;
+}
+
+input {
+  font-size: 3rem;
+  font-weight: 800;
+
+  padding: 1.2rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 7%;
+  width: 100%;
+  height: 70%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+  transition: 0.2s;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: hsl(0, 1%, 44%);
+}
+
+.output p {
+  font-size: 9rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 5.6rem;
+
+  margin-bottom: 3.6rem;
+}
+
+p span {
+  color: hsl(259, 100%, 65%);
+  font-style: italic;
+}
+
+.line {
+  height: 0.1rem;
+  width: 50rem;
+
+  background-color: hsl(0, 0%, 86%);
+}
+
+.svg-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  width: 8rem;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 100%;
+}
+
+.svg-box:hover {
+  background-color: black;
+}
+
+.svg {
+  width: 3rem;
+  height: 3rem;
+}
